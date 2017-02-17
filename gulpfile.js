@@ -6,10 +6,6 @@
 //   return gutil.log('Gulp is running!')
 // });
 
-// TODO: add
-// concat and minify, livereload, templates, markdown / asciidoctor, mathjax,
-// delete generated folders, copy only changed files
-
 var gulp   = require('gulp'),
     jshint = require('gulp-jshint'),
     sass   = require('gulp-sass');
