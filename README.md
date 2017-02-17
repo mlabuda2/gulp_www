@@ -37,6 +37,13 @@ touch dist/assets/javascript/bundle.js
 touch dist/assets/stylesheets/style.css
 ```
 
+Zaczynamy.
+
+```sh
+npm install --save-dev jshint gulp-jshint jshint-stylish
+```
+
+
 
 ### Uruchamiamy stronę na GitHub
 
