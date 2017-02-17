@@ -1,4 +1,4 @@
-## Gulp 101
+## My Gulp 101
 
 - Konfiguracja środowiska do pracy z HTML5+CSS3+JavaScript.
   * [Atom](https://atom.io) – a hackable text editor for the 21st Century.
