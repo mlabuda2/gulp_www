@@ -1,4 +1,4 @@
-## Gulp 101
+## My Gulp 101
 
 - Konfiguracja środowiska do pracy z HTML5+CSS3+JavaScript.
   * [Atom](https://atom.io) – a hackable text editor for the 21st Century.
@@ -11,17 +11,26 @@
     - Mark Goodyear, [Getting started with Gulp](https://markgoodyear.com/2014/01/getting-started-with-gulp/)
   * [Slack](https://slack.com) – where work happens.
     - [Getting Started](https://get.slack.help/hc/en-us/categories/202622877-Slack-Guides)
+  * [Git](https://git-scm.com/book/en/v2).
+    - [GitHub Account Setup and Configuration](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration)
+    - M. Hartl, [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial)
 
-Zainstaluj [node](https://nodejs.org/en/). Następnie ww tym katalogu wykonaj
-te polecenia:
+Zainstaluj [node](https://nodejs.org/en/), a następnie zainstaluj program _gulp_.
 
 ```sh
 npm install -g gulp
+```
+
+Utwórz nowe repozytorium i wykonaj te polecenia w głównym katalogu repozytorium.
+
+```sh
 npm init
 npm install --save-dev gulp # npm i -D gulp
+# dodaj do pliku .gitignore katalogi node_modules i dist
 
 npm ls graceful-fs # ?
 ```
+
 
 ### HTML5 + CSS3 + ES6
 
