@@ -9,9 +9,11 @@
 var gulp   = require('gulp'),
     jshint = require('gulp-jshint'),
     sass   = require('gulp-sass');
+    server = require('gulp-server-livereload');
+    connect = require('gulp-connect');
 
 // define the default task and add the watch task to it
-gulp.task('default', ['watch']);
+gulp.task('default', ['connect']);
 
 // configure the jshint task
 gulp.task('jshint', function() {
@@ -33,7 +35,18 @@ gulp.task('html', function() {
 
 // configure which files to watch and what tasks to use on file changes
 gulp.task('watch', function() {
+  livereload.listen({basePath: 'docs'});
   gulp.watch('src/javascript/**/*.js', ['jshint']);
   gulp.watch('src/scss/**/*.scss', ['css']);
   gulp.watch('src/index.html', ['html']);
+});
+
+//livereload
+gulp.task('connect', function() {
+    connect.server({
+      livereload: true,
+      directoryListing: true,
+      defaultFile: 'index.html'
+    });
+    gulp.watch('docs/index.html', ['html']);
 });

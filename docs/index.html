@@ -1,10 +1,37 @@
-
+<!DOCTYPE html>
 <HEADER>
 <TITLE>The World Wide Web project</TITLE>
 <NEXTID N="55">
+<style>
+    #map {
+      height: 400px;
+      width: 100%;
+     }
+  </style>
 </HEADER>
 <BODY>
-<H1>World Wide Web</H1>The WorldWideWeb (W3) is a wide-area<A
+<H1>World Widse Web</H1>
+
+  <h3>CERN</h3>
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          var uluru = {lat: 46.236215,  lng: 6.049074};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtUqo6LvjlTgKwJS1zajYCO2zQ49kPSMg&callback=initMap">
+      </script>
+<p>
+The WorldWideWeb (W3) is a wide-area<A
 NAME=0 HREF="WhatIs.html">
 hypermedia</A> information retrieval
 initiative aiming to give universal
