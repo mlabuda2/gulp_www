@@ -3,28 +3,46 @@
   <TITLE>The World Wide Web project</TITLE>
   <NEXTID N="55">
   <style>
-    #map {
+    /*#map {
       height: 400px;
       width: 100%;
+     }*/
+    google-map {
+       height: 400px;
+       width: 600px;
+       position: relative;
      }
   </style>
   <link rel="stylesheet" href="assets/stylesheets/style.css">
+  <!-- <link rel="import" href="../bower_components/google-youtube/bower_components/google-youtube/google-youtube.html"> -->
+  <link rel="import" href="../bower_components/google-map/bower_components/google-map/google-map.html">
 
 </HEAD>
 <BODY>
 <H1>World Wide Web</H1>
 
-<!-- google component -->
+<p>Webcomponents są super!</p>
+
+<!-- google components -->
 <google-youtube
-  video-id="https://www.youtube.com/watch?v=tntOCGkgt98"
+  video-id="https://www.youtube.com/watch?v=P9E6emWejoU"
   height="270px"
   width="480px"
   rel="0"
   start="5"
   autoplay="1">
 </google-youtube>
+<p>przerwa tutej</p>
+<google-map fit-to-markers api-key="AIzaSyDtUqo6LvjlTgKwJS1zajYCO2zQ49kPSMg"
+disable-default-ui zoom="10">
+  <google-map-marker latitude="46.236215" longitude="6.049074" draggable="true"></google-map-marker>
+</google-map>
 
-<!-- mapka -->
+
+
+
+
+<!-- mapka
   <h3>CERN</h3>
       <div id="map"></div>
       <script>
@@ -43,6 +61,7 @@
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtUqo6LvjlTgKwJS1zajYCO2zQ49kPSMg&callback=initMap">
       </script>
+-->
 <p> <p>
 The WorldWideWeb (W3) is a wide-area<A
 NAME=0 HREF="WhatIs.html">
